@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Stars() {
+export default function Stars(){
   return (
     <div>Stars</div>
   )
 }
-
-export default Stars

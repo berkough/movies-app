@@ -1,0 +1,55 @@
+{
+  "Search": [
+    {
+      "Title": "Jay and Silent Bob Strike Back",
+      "Year": "2001",
+      "imdbID": "tt0261392",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BY2EyYWEwZmQtZWU0Yy00M2Y3LThiZTktOTQxZDUxY2ZjOTYwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Jay and Silent Bob Reboot",
+      "Year": "2019",
+      "imdbID": "tt6521876",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMDBiN2Y1NTMtYzc1ZS00ODlhLWI3NGYtY2M5ODA1ZmY4ZTdjXkEyXkFqcGdeQXVyMzQwMTY2Nzk@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Jay and Silent Bob Get Old: Tea Bagging in the UK",
+      "Year": "2012",
+      "imdbID": "tt2362006",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTgwMDkwMzg5OV5BMl5BanBnXkFtZTcwNzE3NDM0OA@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Jay and Silent Bob Go Down Under",
+      "Year": "2012",
+      "imdbID": "tt2557848",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNjY5MTE1ODk2NV5BMl5BanBnXkFtZTcwMDkxNDg4OA@@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Jay and Silent Bob Get Irish: The Swearing O' the Green",
+      "Year": "2013",
+      "imdbID": "tt2759112",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMGRjYjIwZWUtZTRlYi00OWMxLWI1YTItMDhhZmU2Y2Q2YWRkXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Jay and Silent Bob Do Degrassi",
+      "Year": "2005",
+      "imdbID": "tt1634555",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzZiZmNjM2YtMmZhZS00NDQ1LThlMzQtZTdhMWVmMjAxNzRiXkEyXkFqcGdeQXVyODkxMTU1Njc@._V1_SX300.jpg"
+    },
+    {
+      "Title": "Magnum Dopus: The Making of Jay and Silent Bob Reboot",
+      "Year": "2020",
+      "imdbID": "tt12179904",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYjI1MDcyY2MtZjkzNi00Njc0LTkwNjAtY2Y0ZDQzMzk3MzkzXkEyXkFqcGdeQXVyMjgzNTc5ODc@._V1_SX300.jpg"
+    }
+  ],
+  "totalResults": "7",
+  "Response": "True"
+}

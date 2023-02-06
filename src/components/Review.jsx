@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Review() {
+export default function Review(){
   return (
     <div>Review</div>
   )
 }
-
-export default Review

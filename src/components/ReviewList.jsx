@@ -1,9 +1,12 @@
 import React from 'react'
 
-function ReviewList() {
+export default function ReviewList(review){
+  const [reviewList, setReviewList] = useState([]);
   return (
-    <div>ReviewList</div>
+    <div>
+      {
+        reviewList.length > 0 ? reviewList.map((review)=>(<Review movie={review}/>)) : <h4>What do you think of this movie?</h4>
+      }
+    </div>
   )
 }
-
-export default ReviewList
