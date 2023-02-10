@@ -19,12 +19,13 @@ export default function Stars(){
             <FaStar 
             className='star'
             color={(ratingValue) <= rating ? "#ffc107" : "#efe5e9"} 
-            size={50}
+            size={40}
             />
           </label>
         )
       })}
-      <p>The rating is {rating}.</p>
+      <button className='btn btn-primary' onClick={()=>{setRating(null)}}>Clear Rating</button>
+      <p>{rating <= 0 ? '' : 'You gave it a ' + rating}</p>
     </div>
   )
 }
