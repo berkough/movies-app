@@ -6,9 +6,13 @@
   padding:0;
   margin:0;
 }
+.star{
+  cursor: pointer;
+  transition: color 200ms;
+}
 
 #movieOutput{
-  display:inline-flexbox;
+  display:inline;
   text-align: center;
   max-width: 600px;
 }
