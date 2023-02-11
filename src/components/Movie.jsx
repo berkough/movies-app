@@ -1,6 +1,5 @@
 import React from 'react'
 import { AiFillCloseCircle } from 'react-icons/ai'
-import ReviewForm from './ReviewForm'
 import ReviewList from './ReviewList'
 
 export default function Movie({imdbID,Title,Year,Poster,onDelete}){
@@ -12,7 +11,7 @@ export default function Movie({imdbID,Title,Year,Poster,onDelete}){
       <a href={imdbLink}>
         <img className='rounded' src={Poster === 'N/A' ? 'https://via.placeholder.com/300' : Poster} alt={Title} />
       </a>
-      <ReviewForm imdbID={imdbID} />
+      <ReviewList imdbID={imdbID} />
     </div>
   )
 }
