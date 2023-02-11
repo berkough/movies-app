@@ -1,11 +1,15 @@
 import React from 'react'
 import Stars from './Stars'
+import { v4 as uuidv4 } from 'uuid'
 import ReviewList from './ReviewList'
 
-export default function ReviewForm({imdbID,setReivewList}){
+export default function ReviewForm({imdbID}){
+  function setReviewList(){
+
+  }
   return (
     <div id={'reviewInput-'+imdbID}>
-    <Stars />
+    <Stars key={imdbID}/>
     <textarea 
       className='form-control mb-10'
       aria-label='Review'

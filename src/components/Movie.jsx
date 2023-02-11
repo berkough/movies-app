@@ -8,7 +8,7 @@ export default function Movie({imdbID,Title,Year,Poster,onDelete}){
 
   return (
     <div className='m-4 w-25' id={imdbID}>
-      <p className='justify-content-center'>{Title} ({Year}) <label type='radio' onClick={()=>onDelete(imdbID)}><AiFillCloseCircle size={20}/></label></p>
+      <p className='justify-content-center'>{Title} ({Year}) <label type='radio' onClick={()=>onDelete(imdbID)}><AiFillCloseCircle size={30}/></label></p>
       <a href={imdbLink}>
         <img className='rounded' src={Poster === 'N/A' ? 'https://via.placeholder.com/300' : Poster} alt={Title} />
       </a>
