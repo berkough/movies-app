@@ -1,5 +1,4 @@
 import React from "react";
-import Stars from './Stars'
 import { AiFillCloseCircle } from 'react-icons/ai'
 
 export default function Review({reviews,setReviewList,reviewList,imdbID}) {

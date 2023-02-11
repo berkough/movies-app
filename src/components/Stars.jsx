@@ -18,7 +18,7 @@ export default function Stars(){
             <FaStar 
             className='star'
             color={(ratingValue) <= rating ? "#ffc107" : "#737373"} 
-            size={40}
+            size={30}
             />
           </label>
         )

@@ -9,16 +9,19 @@ export default function MovieList(){
     await fetch(URL+title)
       .then((response)=>response.json())
       .then((data)=>{
-        console.log(data);
         let movies = data.Search;
+        console.log(movies);
+        for (const movie of movies){
+          localStorage.setItem(`${movie.imdbID}`,JSON.stringify(movie));
+        }
         setMovieList(movies);
-        localStorage.setItem('movieList',JSON.stringify(movies));
       });
   }
 
   function handleDeleteMovie(imdbID){
     console.log(imdbID);
-    setMovieList(movieList.filter(movie => movie.imdbID !== imdbID))
+    setMovieList(movieList.filter(movie => movie.imdbID !== imdbID));
+    localStorage.removeItem(`${imdbID}`);
   }
 
   function clearEverything(){
@@ -34,9 +37,10 @@ export default function MovieList(){
         <button className='btn btn-primary rounded' type='button' id='clearBtn' onClick={()=>{clearEverything()}}>Clear EVERYTHING!</button>
       </div>
       <div className='d-inline-flex flex-wrap justify-content-center' id='movieOutput'>
-      {
-        movieList.length > 0 ? movieList.map((movie)=>(<Movie {...movie} key={movie.imdbID} onDelete={handleDeleteMovie} movieList={movieList} setMovieList={setMovieList}/>)) : <h2>Try searching for a movie title...</h2>
-      }
+        {
+          movieList.length > 0 ? movieList.map((movie)=>(<Movie {...movie} key={movie.imdbID} onDelete={handleDeleteMovie} movieList={movieList} setMovieList={setMovieList}/>))
+          : <h2>Try searching for a movie title...</h2>
+        } 
       </div>
       <div></div>
     </>
