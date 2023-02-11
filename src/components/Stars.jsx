@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { FaStar} from 'react-icons/fa'
+import { FaStar } from 'react-icons/fa'
 
 export default function Stars(){
   const [rating, setRating] = useState(0);
-  // const [hover, setHover] = useState(0);
   return (
     <div>
       {[...Array(5)].map((star, i)=>{
@@ -18,7 +17,7 @@ export default function Stars(){
           >
             <FaStar 
             className='star'
-            color={(ratingValue) <= rating ? "#ffc107" : "#efe5e9"} 
+            color={(ratingValue) <= rating ? "#ffc107" : "#737373"} 
             size={40}
             />
           </label>

@@ -1,7 +1,11 @@
 import React from "react";
+import Stars from './Stars'
 
-export default function Review() {
+export default function Review({reviewText,imdbID}) {
   return (
-    <div></div>
+    <div id={'review-'+imdbID}>
+      <Stars />
+      {reviewText}
+    </div>
   );
 }
