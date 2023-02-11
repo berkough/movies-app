@@ -12,7 +12,7 @@ export default function MovieList(){
         console.log(data);
         let movies = data.Search;
         setMovieList(movies);
-        localStorage.setItem('search',JSON.stringify(movies));
+        localStorage.setItem('movieList',JSON.stringify(movies));
       });
   }
 
