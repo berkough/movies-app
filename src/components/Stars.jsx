@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { FaStar } from 'react-icons/fa'
 
-export default function Stars(){
+export default function Stars({ imdbID }){
   const [rating, setRating] = useState(0);
   return (
-    <div>
+    <div id={'stars-'+imdbID}>
       {[...Array(5)].map((star, i)=>{
         const ratingValue = i + 1;
         

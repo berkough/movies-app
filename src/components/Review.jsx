@@ -13,7 +13,7 @@ export default function Review({reviews,setReviewList,reviewList,imdbID}) {
 
   return (
     <div>
-      {reviews.reviewText}<label type='radio' onClick={()=>deleteIndivdualReviews(reviews.id)}><AiFillCloseCircle size={20}/></label>
+      {reviews.reviewText} <label type='radio' onClick={()=>deleteIndivdualReviews(reviews.id)}><AiFillCloseCircle size={20}/></label>
     </div>
   );
 }

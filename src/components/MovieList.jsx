@@ -15,17 +15,17 @@ export default function MovieList(){
         for (const movie of movies){
           localStorage.setItem(`${movie.imdbID}`,JSON.stringify(movie));
         }
-        setMovieList(movies);
+        //setMovieList(movies);
         pushLocalStorage();
       });
   }
   
   function pushLocalStorage(){
     let temp = [];
-      Object.keys(localStorage).forEach(key=>temp.push(JSON.parse(localStorage.getItem(key))))
-      setMovieObject(temp);
-      temp = [];
-      console.log("pushing to localStorage "+movieObject);
+    console.log("pushing to localStorage "+movieObject);
+    Object.keys(localStorage).forEach(key=>temp.push(JSON.parse(localStorage.getItem(key))))
+    setMovieObject(temp);
+    temp = [];
     }
 
   function handleDeleteMovie(imdbID){
@@ -50,12 +50,8 @@ export default function MovieList(){
       </div>
       <div className='d-inline-flex flex-wrap justify-content-center' id='movieOutput'>
         { 
-          // movieList.length > 0 ? movieList.map((movie)=>(<Movie {...movie} key={movie.imdbID} onDelete={handleDeleteMovie} movieList={movieList} setMovieList={setMovieList}/>))
-          // : <h2>Try searching for a movie title...</h2>
-        }
-        <br/>
-        { 
-          localStorage.length > 0 ? movieObject.map((movie)=>(<Movie {...movie} key={movie.imdbID} onDelete={handleDeleteMovie} movieList={movieList} setMovieList={setMovieList}/>)) : null
+          localStorage.length > 0 ? movieObject.map((movie)=>(<Movie {...movie} key={movie.imdbID} onDelete={handleDeleteMovie} movieList={movieList} setMovieList={setMovieList}/>)) 
+          : <h2>Try searching for a movie title...</h2>
         } 
       </div>
       <div></div>
